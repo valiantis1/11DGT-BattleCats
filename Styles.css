@@ -1,3 +1,6 @@
+/* if I say found online it is because I did but I most likely understand the code */
+
+
 body {
     background-color: rgb(239, 220, 171);
     margin:0;
@@ -92,4 +95,30 @@ body {
 .moving-thingy a {
     color: rgb(239, 220, 171);
     text-underline-offset: 5px; /* hides the underline into the background */
+}
+
+.Character-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.Character-row img {
+    border-radius: 15px;
+    width: 100px;
+    height: auto;
+}
+
+.character-block {
+    background-color: rgb(68, 54, 39);
+    padding: 20px; /* adds spacing between other stuff around it */
+    margin: 20px; /* adds spacing between other stuff around it */
+    border-radius: 15px;
+    
+    /* found online */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns text to the bottom of the div (only works in flex)*/
 }

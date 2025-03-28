@@ -1,16 +1,17 @@
-/* if I say found online it is because I did but I most likely understand the code */
+/* if I say found online it is because I did but I most likely understand all the code */
 
 
 body {
     background-color: rgb(239, 220, 171);
-    margin:0;
+
+    margin:0; /* these fixed some problems I had with the page being off */
     padding:0;
 
     /* found online to stop error with user being able to scroll to the right for some reason */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-.navbar {
+.navbar { /* for the top navagation bar */
     background-color: rgb(217, 131, 36);
     align-items: center;
     width: 100%;
@@ -18,26 +19,27 @@ body {
     padding: 20px;
 }
 
-.buttons {
+.buttons { /* for the centering of the buttons 
+    also needed to make it this way to keep the hover effect*/
     text-align: center;
     padding: 20px;
 }
 
-.button {
+.button { /* for the buttons */
     background-color: rgb(134, 108, 79);
     color: rgb(239, 220, 171);
     text-align: center;
     font-size: 16px;
     cursor: pointer; /* changes the cursor to a pointer when hovering over the button */
     border-radius: 10px;
-    border: solid 2px rgb(68, 54, 39); /* changes border color */
+    border: solid 2px rgb(68, 54, 39);
 }
 
-.button:disabled {
+.button:disabled { /* for the button of the webpage the user is on*/
     cursor: not-allowed; /* changes the cursor to like a no state (this will happen when you are on the page you are going to)*/
 }
 
-.button:hover { /* hover effect (found online)*/
+.button:hover { /* hover effect */
     background-color: rgb(95, 75, 55);
     color: rgb(242, 246, 208);
 }
@@ -47,14 +49,14 @@ body {
     color: rgb(242, 246, 208);
 }
 
-.title { 
+.title { /* for the titles of the pages */
     display: block;
     text-align: center;
     margin-left: auto; /* Centers the image by evening it out*/
     margin-right: auto;/* Centers the image by evening it out*/
 }
 
-.footer {
+.footer { /* for the bit at the bottom of the page that says rights reserved*/
     background-color: rgb(68, 54, 39);
     width: 100%;
     height: 75px;
@@ -62,7 +64,7 @@ body {
     text-align: center;
 }
 
-.text-block {
+.text-block { /* for the text blocks that have the text in them */
     background-color: rgb(68, 54, 39);
     padding: 20px; /* adds spacing between other stuff around it */
     margin: 20px; /* adds spacing between other stuff around it */
@@ -71,11 +73,16 @@ body {
     text-align: center;
 }
 
-.text-colour {
+.text-colour { /* just the text colour */
     color: rgb(239, 220, 171);
 }
 
-.image { /* for the images next to text */
+.image { /* just for the images */
+    display: flex;
+    flex-direction: column; /* found online */
+}
+
+.image img { /* just for the images */
     padding: 10px;
     background-color: rgb(68, 54, 39);
     margin: 10px;
@@ -83,22 +90,16 @@ body {
     border-radius: 30px;
 }
 
-.image-container {
-    display: flex;
-    flex-direction: column; /* found online */
-}
-
 .moving-thingy { /* for the marquee */
     background-color: rgb(68, 54, 39);
-    	
 }
 
-.moving-thingy a {
+.moving-thingy a { /* for the marquee link */
     color: rgb(239, 220, 171);
     text-underline-offset: 5px; /* hides the underline into the background */
 }
 
-.Character-row {
+.Character-row { /* for the batlle cats to be in rows */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -106,7 +107,7 @@ body {
     text-align: center;
 }
 
-.Character-row img {
+.Character-row img { /* for the images in the Character-row */
     border-radius: 15px;
     width: 100px;
     height: auto;
@@ -117,9 +118,9 @@ body {
     padding: 20px; /* adds spacing between other stuff around it */
     margin: 20px; /* adds spacing between other stuff around it */
     border-radius: 15px;
-    
-    /* found online */
+
+    /* found online makes the text go to the bottom of the div */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Aligns text to the bottom of the div (only works in flex)*/
+    justify-content: flex-end;
 }
